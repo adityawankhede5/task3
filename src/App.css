@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+}
+.main{
+  /* border: 5px solid crimson; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.titleBar{
+  /* border: 5px solid cadetblue; */
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-bottom: 1px solid lightgray;
+}
+.sceneContainer{
+  /* border: 5px solid green; */
+  flex: 1;
+  overflow-y: auto;
+  position: relative;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sceneComponent{
+  /* border: 5px solid black; */
+  height: 100%;
+  width: 100%;
+}
+
+.sidecontrolContainer{
+  /* border: 5px solid crimson; */
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(197, 202, 220, 0.3) 0px 4px 30px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  display: flex;
+}
+
+
+.controlsContainer{
+  /* border: 2px solid lightblue; */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.rectangle{
+  width: 30px;
+  height: 30px;
+  background-color: #778899;
+  cursor: pointer;
+}
+
+.lablesContainer{
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 5px;
+  border-radius: 5px;
+  width: 150px;
+  z-index: 10;
+  position: absolute;
+  font-size: 0.8em;
+}
+.lablesContainer input{
+  width: 100%;
+  margin: 5px 0px;
+  border: 0px;
+  border-bottom: 1px solid rgba(0,0,0,0.16);
+  outline: white;
+}
+.allLablesContainer{
+  overflow-y: auto;
+  max-height: 200px;
+}
+.lableContainer{
+  padding: 5px;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+.cancelButton{
+  text-align: center;
+  cursor: pointer;
+  padding: 2px;
+  margin: 3px;
+  border: 1px solid lightgray;
+}
